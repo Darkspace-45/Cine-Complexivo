@@ -80,14 +80,15 @@
             <th>ID</th>
             <th>Cliente</th>
             <th>Película</th>
-            <th>Fecha y Hora</th>
-            <th>Entradas</th>
+            <th>Hora de Inicio</th>
+            <th>Hora de Fin</th>
             <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="funcion : ${funciones}" class="text-center">
             <td th:text="${funcion.id}"></td>
+            <td th:text="${funcion.cliente.nombre}" class="fw-bold"></td>
             <td th:text="${funcion.pelicula.nombre}" class="fw-bold"></td>
             <td>
         <span class="badge badge-horario"

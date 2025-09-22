@@ -91,6 +91,15 @@
             <label for="genero">Género:</label>
             <input type="text" th:field="*{genero}" id="genero" class="form-control" placeholder="Ej: Acción"/>
 
+            <!-- Duración -->
+            <label for="duracion">Duración:</label>
+            <input type="number" th:field="*{duracion}" id="duracion" class="form-control" placeholder="Ej: 120"/>
+
+            <!-- Horario -->
+            <label for="horario">Horario:</label>
+            <input type="text" th:field="*{horario}" id="horario" class="form-control" placeholder="Ej: 18:30"/>
+
+
             <!-- Disponible -->
             <label for="disponible">Disponible:</label>
             <select th:field="*{disponible}" id="disponible" class="form-control">

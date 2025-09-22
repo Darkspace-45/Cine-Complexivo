@@ -88,7 +88,7 @@
         <tbody>
         <tr th:each="pelicula : ${peliculas}" class="text-center">
             <td th:text="${pelicula.id}"></td>
-            <td th:text="${pelicula.titulo}" class="fw-bold"></td>
+            <td th:text="${pelicula.nombre}" class="fw-bold"></td>
             <td th:text="${pelicula.genero}"></td>
             <td th:text="${pelicula.duracion + ' min'}"></td>
             <td><span class="badge badge-horario" th:text="${pelicula.horario}"></span></td>
@@ -106,7 +106,7 @@
                     <i class="bi bi-trash"></i>
                 </a>
                 <a class="btn btn-sm btn-success btn-custom"
-                   th:href="@{/reservas/nueva/{id}(id=${pelicula.id})}">
+                   th:href="@{/funciones/nueva/{id}(id=${pelicula.id})}">
                     <i class="bi bi-ticket-perforated"></i> Reservar
                 </a>
             </td>
